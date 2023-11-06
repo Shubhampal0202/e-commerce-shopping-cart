@@ -1,0 +1,138 @@
+.productsContainer {
+  display: flex;
+}
+.filter {
+  width: 22vw;
+  border: 1px solid green;
+  background-color: rgba(0, 0, 0, 0.82);
+  margin-top: 12px;
+  margin-left: 12px;
+  color: white;
+  height: 84vh;
+}
+
+.filter > h1 {
+  font-weight: 500;
+  text-align: left;
+  font-size: 1.8rem;
+  margin-top: 1.3rem;
+  padding-left: 10px;
+}
+.asc {
+  margin-top: 1.3rem;
+  padding-left: 10px;
+}
+
+.dsc {
+  margin-top: 1.3rem;
+  padding-left: 10px;
+}
+
+.stock {
+  margin-top: 1.3rem;
+  padding-left: 10px;
+}
+.filterRating {
+  margin-top: 1.3rem;
+  padding-left: 10px;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+.clearButton {
+  margin-top: 1.3rem;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clearButton > button {
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 70%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 2px;
+}
+.clearButton > button:hover {
+  background-color: rgba(255, 255, 255, 0.804);
+}
+
+.delivery {
+  margin-top: 1.3rem;
+  padding-left: 10px;
+}
+.filter label {
+  margin-left: 6px;
+}
+
+.products {
+  width: 78vw;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  text-align: center;
+}
+.productCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rate {
+  margin-top: 5px;
+}
+.rate > * {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 720px) {
+  .filter {
+    width: 27vw;
+    min-height: 100vh;
+    height: max-content;
+  }
+
+  .products {
+    width: 73vw;
+  }
+}
+
+@media only screen and (max-width: 719px) and (min-width: 560px) {
+  .filter {
+    width: 35vw;
+    min-width: 200px;
+    min-height: 100vh;
+    height: max-content;
+    padding-left: 2vw;
+  }
+  .products {
+    width: 65vw;
+    min-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 559px){
+  .products {
+    width: 55vw;
+  }
+  .products >h1{
+    font-size: 1.6rem;
+  }
+  .filter {
+    width: 45vw;
+    min-height: 100vh;
+    height: max-content;
+    padding-left: 2vw;
+  }
+  .filter div{
+    font-size: 0.8rem;
+  }
+  .filter >h1{
+    font-size: 1.2rem;
+  }
+}

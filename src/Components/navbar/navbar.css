@@ -1,0 +1,143 @@
+.navbar {
+  height: 4rem;
+  border: 1px solid rgba(0, 0, 0, 0.249);
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.804);
+}
+
+.navbar > .logo {
+  width: 20%;
+}
+.navbar > .input {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar > .input > input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+.navbar > .tabs {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar > .tabs a {
+  text-decoration: none;
+  color: white;
+}
+.navbar > .tabs .prd {
+  margin-right: 3rem;
+}
+.navbar > .tabs .prd > a {
+  font-size: 1.3rem;
+  transition: all 0.5s;
+  font-weight: 500;
+}
+.tabs > .prd > a:hover {
+  color: rgba(255, 255, 255, 0.285);
+  text-decoration: underline;
+}
+
+.navbar > .tabs .cart a {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#noOfPrd {
+  font-size: 0.8rem;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.navbar > .tabs .cart {
+  margin-right: 2rem;
+  background-color: #4be64b;
+  padding: 6px 14px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.navbar > .tabs .cart:hover {
+  background-color: #4be64ba5;
+}
+
+.navbar > .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar > .logo > img {
+  width: 4rem;
+  border-radius: 100%;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 720px) {
+  .navbar > .logo {
+    width: 15%;
+  }
+  .navbar > .input {
+    width: 45%;
+  }
+  .navbar > .tabs {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 719px) and (min-width: 460px) {
+  .navbar > .logo {
+    width: 12%;
+    margin-left: 6px;
+  }
+  .navbar > .input {
+    width: 35%;
+  }
+  .navbar > .tabs {
+    width: 53%;
+  }
+  .navbar > .input > input {
+    width: 90%;
+  }
+  .navbar > .tabs .prd > a {
+    font-size: 1rem;
+  }
+  .navbar > .tabs .cart a {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 459px) {
+  .navbar {
+    flex-direction: column;
+    height: 12rem;
+  }
+  .navbar .tabs {
+    width: 100%;
+    justify-content: space-around;
+    margin: 1rem;
+  }
+
+  .navbar > .input {
+    order: 2;
+    justify-content: center;
+    width: 100%;
+  }
+  .navbar > .logo {
+    margin-top: 6px;
+  }
+}
